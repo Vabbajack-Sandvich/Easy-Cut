@@ -1,6 +1,18 @@
 # Easy Cut Extention For VLC For Generating FFMPEG Cut Commands
 
 
+The way it makes the cuts is by leaving the orginal file alone, but generating new files at the specified times.
+
+
+This allows for easy editing by deleting the unwanted sections and then concatting them all.
+
+
+All without having to open a project editor of some kind, or save a new project directory, or fight filters or fight effects or anything else GUI related.
+
+
+This just simply cuts the video in to new files with a batch file you generated with a few button clicks and pausing the player cursor where you want a cut.
+
+
 This version is not intended to be a fork of Bookmark Moments, I used their code as a base and changed it.
 
 
@@ -59,18 +71,6 @@ It exports them to the memos.txt file in the appdata VLC folder when you click t
 
 
 From there you can copy and paste the commands in to a batch file in the same directory as your mp4 files and run it to make the cuts.
-
-
-The way it makes the cuts is by leaving the orginal file alone, but generating new files at the specified times.
-
-
-This allows for easy editing by deleting the unwanted sections and then concatting them all.
-
-
-All without having to open a project editor of some kind, or save a new project directory, or fight filters or fight effects or anything else GUI related.
-
-
-This just simply cuts the video in to new files with a batch file you generated with a few button clicks and pausing the player cursor where you want a cut.
 
 
 
