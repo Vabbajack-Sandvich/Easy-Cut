@@ -191,19 +191,10 @@ function activate()
 	else
 		ToCutsGUI(0)
 	end
-	-- i think this is where i can add code to start up
-	-- maybe fix whatever that button issue is
-	-- where when you click one of the 1 x 2 x buttons
-	-- you have to click it 1 time every time and
-	-- it seems like it does nothing the first time
-	
-	-- so if i put the button click code here
-	-- and run it the first time
-	-- or on the window that defines it
-	-- or when the window that holds it loads
-	
-	-- 935 ish is the confirm_caption function
-	-- that all the 1x 2x buttons call
+
+	-- start up stuff
+
+	--button issue was something unrelated because of a different error which has been fixed
 	
 	--zconfirm_caption()
 	
