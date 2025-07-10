@@ -1271,14 +1271,8 @@ function memosave()
 	--old working one
 	--zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c:v libx264 -crf 20 -preset ultrafast "..zstrmed.."_uf_t-"..tostring(k)..".mp4")
 	
-	--note:
-	--cant use stream copy from -c copy and filter complex together
-	--7-10-2025-0714 - i switched 1x over to stream copy for much faster
-	--1x cutting and faster overall processing
-	
 	if (ztms[k]=="1x") then	
-		zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c copy "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
-		--zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c:v libx264 -crf 20 -preset ultrafast -r 60 "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
+		zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c:v libx264 -crf 20 -preset ultrafast -r 60 "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
 		--zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -codec copy -preset ultrafast -r 60 "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
 	end
 	
@@ -1305,7 +1299,7 @@ function memosave()
 	--this adds the last X from the list
 	--because the first one gets replaced by 1x every time
 	
-	zstrtsp=tostring(rawget(tmsorted,k))
+		zstrtsp=tostring(rawget(tmsorted,k))
 	zstrtcp=zstrtc
 	--zstrtc=string.sub(zstrtsp,1,8)
 	
@@ -1320,8 +1314,7 @@ function memosave()
 	ztms[k]=string.sub(tostring(rawget(tmsorted,k-1)),10,12)
 	
 		if (ztms[k]=="1x") then	
-		zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c copy "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
-		--zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c:v libx264 -crf 20 -preset ultrafast -r 60 "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
+		zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -c:v libx264 -crf 20 -preset ultrafast -r 60 "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
 		--zstrout=tostring("ffmpeg -y -ss "..zstrtcp.." -to "..zstrtc.." -i "..medium_name.." -codec copy -preset ultrafast -r 60 "..zstrmed.."_uf_t_"..tostring(k).."_"..ztms[k]..".mp4")
 	end
 	

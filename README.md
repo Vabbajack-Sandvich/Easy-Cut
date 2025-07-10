@@ -1,9 +1,6 @@
 # Easy Cut Extention For VLC For Generating FFMPEG Cut Commands
 
 
-1.1 update - I changed 1x cuts over to -c copy because it's faster.
-
-
 The way it makes the cuts is by leaving the original file alone, but generating new files at the specified times.
 
 
@@ -55,7 +52,7 @@ This uses the time codes for the stored cuts to generate these commands.
 This is a normal 1X speed cut command.
 
 
-ffmpeg -y -ss 00:00:00 -to 00:20:00 -i 2025-02-28_19-23-21.mp4 -c copy 2025-02-28_19-23-21_uf_t_1_1x.mp4
+ffmpeg -y -ss 00:00:00 -to 00:20:00 -i 2025-02-28_19-23-21.mp4 -c:v libx264 -crf 20 -preset ultrafast -r 60 2025-02-28_19-23-21_uf_t_1_1x.mp4
 
 
 This is a 2X speed cut command. This keeps the pitch on the audio normal and not high pitched while speeding up the video.
