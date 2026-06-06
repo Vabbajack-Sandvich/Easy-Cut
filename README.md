@@ -1,3 +1,5 @@
+![example 1](https://github.com/Vabbajack-Sandvich/Easy-Cut/blob/main/easy-cut-0.png?raw=true)
+
 # Easy Cut Extention For VLC For Generating FFMPEG Cut Commands
 
 
