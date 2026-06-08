@@ -19,7 +19,7 @@ They use the C:\vc\ folder.
 The easiest way to use Easy Cut with these Ffmmpeg batch files:
 
 
-TLDR:
+#TLDR:
 
 
 Use the ffmpeg-concat.bat in an admin cmd window.
@@ -131,7 +131,7 @@ ffmpeg -y -ss 00:00:00 -to 00:20:00 -i 2025-02-28_19-23-21.mp4 -c:v libx264 -crf
 This is a 2X speed cut command. This keeps the pitch on the audio normal and not high pitched while speeding up the video.
 
 
-ffmpeg -y -ss 00:00:00 -to 00:00:00 -i 2025-02-28_19-23-21.mp4 -c:v libx264 -crf 20 -preset ultrafast -r 60 -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2.0[a]" -map "[v]" -map "[a]" 2025-02-28_19-23-21_uf_t_3_2x.mp4
+ffmpeg -y -ss 00:00:00 -to 00:02:00 -i 2025-02-28_19-23-21.mp4 -c:v libx264 -crf 20 -preset ultrafast -r 60 -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2.0[a]" -map "[v]" -map "[a]" 2025-02-28_19-23-21_uf_t_3_2x.mp4
 
 
 The 2X 4X 8X all do the same thing, just at different speeds.
