@@ -1,5 +1,76 @@
 ![example 1](https://github.com/Vabbajack-Sandvich/Easy-Cut/blob/main/easy-cut-0.png?raw=true)
 
+
+# Note: Ffmpeg Batch Files:
+
+
+2026-06-08-12-53-32-PM
+
+
+https://github.com/Vabbajack-Sandvich/vabbajack-sandvich-ffmpeg-batch-repo
+
+
+These work well with Easy Cut.
+
+
+They use the C:\vc\ folder.
+
+
+The easiest way to use Easy Cut with these Ffmmpeg batch files:
+
+
+TLDR:
+
+
+Use the ffmpeg-concat.bat in an admin cmd window.
+
+
+Put shortcuts for Memos.txt (C:\Users\USERNAME\AppData\Roaming\vlc\Memos.txt
+) and ffmpeg-concat.bat (I keep these in the C:\ directory, easier to type and or use F2 on the file to copy and paste the file name and right click in the cmd window to paste)
+
+
+=======================
+
+
+Put the video or copy in the C:\vc\ folder
+
+
+Make a shortcut to the Memos.txt in the C:\vc\ folder
+
+
+Memos.txt path:
+
+
+C:\Users\USERNAME\AppData\Roaming\vlc\Memos.txt
+
+
+Makes it easy to open it after exporting.
+
+
+Make a batch file in the C:\vc\ folder. I use zf.bat
+
+
+Copy and paste whichever sections you want to run in to the batch file.
+
+
+Open CMD. Windows Key R, type cmd. hold control and shift and push enter to run things in admininstrator mode.
+
+
+Do:
+
+
+cd C:\vc
+
+
+Hit enter
+
+
+Type zf.bat (dont need .bat so just zf will work)
+
+
+ffmpeg-concat.bat is the file to use to put all the pieces from the video together if needed; especially when doing 2x or more cuts you want put back together for things like timelapse.
+
+
 # Easy Cut Extention For VLC For Generating FFMPEG Cut Commands
 
 
