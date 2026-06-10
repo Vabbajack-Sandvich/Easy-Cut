@@ -73,7 +73,7 @@ function descriptor()
 	
 end
 
-
+--2026-06-10-06-14-53-AM
 --yeah i wasnt responsible for bad and fucking kaka variable names. its funny as hell though ┐o┐. assholes. - vabbajacksandvich
 --=======================================
 --2026-06-03-04-26-20-AM
