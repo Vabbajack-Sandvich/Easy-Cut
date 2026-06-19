@@ -3,6 +3,13 @@
 
 # Note: Ffmpeg Batch Files:
 
+2026-06-19-02-15-05-AM
+
+The meta data will mess up the title.
+
+Strip the meta data first.
+
+https://github.com/Vabbajack-Sandvich/vabbajack-sandvich-ffmpeg-batch-repo/blob/main/ffmpeg-stripmetadata.bat
 
 2026-06-08-12-53-32-PM
 
